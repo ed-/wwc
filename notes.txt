@@ -1,0 +1,61 @@
+These are my notes so far:
+
+Make a new directory:
+    mkdir <new name>
+    cd <same name>
+
+Initialize a new repository
+    git init
+
+Check up on your new repository
+    git status
+
+Pick an IDE
+    I chose vim, don't choose vim
+    You might like Sublime Text 2, or PyCharm, or PyDev, or Eclipse, or emacs
+
+Open a file, notes.txt, in your new directory (in that repository)
+
+Notes: hey how about WHY
+
+Add a file to the repository
+    git add <that file>
+
+Create a new commit!
+    git commit -m 'this is my commit message'
+
+Whoops, deleted notes.txt
+    git checkout notes.txt
+
+Create a new feature branch
+   git checkout -b <new-branch-name>
+
+What branch am I in?
+    git branch -a
+
+Okay, back to master
+    git checkout master
+
+I liked those changes though
+    git merge <that-feature-branch>
+
+
+Workflow so far
+
+git init
+repeat {
+    git checkout -b <feature-branch>
+    repeat {
+        make changes to <files>
+        git add <files>
+        git commit
+    }
+    git checkout master
+    maybe {
+        git merge <feature-branch>
+    }
+}
+
+19th August
+
+https://www.udacity.com/course/how-to-use-git-and-github--ud775
